@@ -1,7 +1,10 @@
 <template>
   <h1>{{ title }}</h1>
-  <Modal />
-  
+
+  <p>Welcome...</p>
+  <!-- <Modal heading="Sign up for the Givaway!" text="Grab your ninja swag for half price!" /> -->
+  <Modal :heading="heading" :text="text" theme="sale" />
+
 
 </template>
 
@@ -16,7 +19,11 @@ export default {
 
   data() {
     return {
-      title: 'My First Vue App!'
+      title: 'My First Vue App!',
+
+      heading: 'Sign up for the Giveaway!',
+      text: 'Grab your swag for half price!'
+
     }
   }
 }
