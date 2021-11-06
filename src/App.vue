@@ -1,7 +1,7 @@
 <template>
   <h1>{{ title }}</h1>
-
   <Modal />
+  
 
 </template>
 
@@ -13,7 +13,7 @@ export default {
   name: 'App',
 
   components: { Modal },
-  
+
   data() {
     return {
       title: 'My First Vue App!'
