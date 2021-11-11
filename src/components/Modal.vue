@@ -3,6 +3,7 @@
     <div class="modal" :class="{ sale: theme === 'sale' }">
 
       <slot>default content (if no slot passed in)</slot>
+
       <div class="actions">
         <slot name="links"></slot>
       </div>
@@ -14,12 +15,12 @@
 <script>
 export default {
 
-  props: ['heading', 'text', 'theme'],
+  props: ['theme'],
   
   methods: {
   closeModal() {
     this.$emit('close')
-  }
+    }
   }
 }
 </script>
@@ -47,7 +48,6 @@ export default {
   .modal p {
     font-style: normal;
   }
-
   .modal .actions {
     text-align: center;
     margin: 30px 0 10px 0;
@@ -71,7 +71,6 @@ export default {
   .modal.sale h1 {
     color: white;
   }
-
   .modal.sale .actions {
     color: white;
   }

@@ -40,20 +40,16 @@ export default {
     return {
       title: 'My First Vue App!',
       showModal: false,
-
       showModalTwo: false,
-
     }
   },
     methods: {
     toggleModal() {
       this.showModal = !this.showModal
     },
-
     toggleModalTwo() {
       this.showModalTwo = !this.showModalTwo
     }
-
   }
 }
 </script>
